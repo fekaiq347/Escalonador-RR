@@ -1,13 +1,23 @@
 # Escalonador-RR
 
-Trabalho efetuado para a disciplina de Arquitetura de Computadores e Sistemas Operacionais, no período 2024.2, pelos alunos Pedro Freitas de Moura, Kaique Fabricio Eufrásio e Pedro Salazar Pessoa Machado.
+**Universidade Federal do Rio de Janeiro**
+
+**Trabalho**: Escalonador Round-Robin
+
+**Disciplina**: Arquitetura de Computadores e Sistemas Operacionais
+
+**Alunos**: 
+* Kaique Fabricio Eufrásio
+* Pedro Freitas de Moura
+* Pedro Salazar Pessoa Machado
+
 ---
 
 ## OBJETIVO: 
 
 Desenvolver um simulador que aplica o algoritmo de escalonamento de processos utilizando a estratégia Round Robin com Feedback, com o objetivo de aprofundar o entendimento sobre o gerenciamento de processos em sistemas operacionais. 
 
-
+---
 ## INTRODUÇÃO 
 
 Este programa apresenta um simulador de escalonador Round Robin com Feedback, utilizado para gerenciar a execução de processos em sistemas operacionais. O algoritmo organiza os processos em filas circulares de alta e baixa prioridade, alternando entre elas conforme eventos específicos. Em um primeiro plano, os processos começam na fila de alta prioridade, mas podem ser realocados para a fila de baixa prioridade caso excedam seu quantum de execução. 
@@ -16,7 +26,7 @@ O sistema de feedback permite que processos retornem à fila de alta prioridade 
 
 Essa dinâmica otimiza o uso da CPU, aumentando o throughput à medida em que os outros processos aguardam suas operações de I/O. O simulador ilustra o funcionamento eficiente do escalonador, evidenciando como o Round Robin com Feedback gerencia múltiplas filas e integra I/O, equilibrando responsividade, gerenciamento e prioridade na execução de processos. 
 
-
+---
 ## PREMISSAS
 
 1. **Limite máximo de processos criados:** Não houve a imposição de um limite, tendo em vista que foi feita a simulação por meio de uma fila adaptada à implementação de lista encadeada e memória dinâmica, para que, desse modo, o programa saiba lidar com o caso do computador ficar sem memória utilizável.
